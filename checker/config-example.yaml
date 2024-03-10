@@ -1,0 +1,16 @@
+kafka:
+  bootstrap_servers: 'kafka.example.com:11880'
+  topic: 'site-check-tasks'
+ssl:
+  cafile: '../certs/kafka/ca.pem'
+  certfile: '../certs/kafka/service.cert'
+  keyfile: '../certs/kafka/service.key'
+  group_id: 'checker-default'
+postgres:
+  dbname: 'checker'
+  user: 'postgres'
+  password: '1'
+  port: 5432
+  host: '0.0.0.0'
+http:
+  timeout: 5
